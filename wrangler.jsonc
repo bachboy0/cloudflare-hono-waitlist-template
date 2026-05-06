@@ -1,0 +1,23 @@
+{
+  "name": "cloudflare-hono-waitlist-template",
+  "compatibility_date": "2026-05-05",
+  "main": "src/server/index.ts",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS"
+  },
+  "env": {
+    "staging": {
+      "vars": {
+        "ENVIRONMENT": "staging",
+        "CF_ACCESS_DOMAIN": "https://nakayamaken-blog.cloudflareaccess.com",
+        "POLICY_AUD": "bf7cea9fc618158b7080c734993f6030d676bd6403c71cf500b45e5ad0061a49"
+      }
+    },
+    "production": {
+      "vars": {
+        "ENVIRONMENT": "production"
+      }
+    }
+  }
+}
