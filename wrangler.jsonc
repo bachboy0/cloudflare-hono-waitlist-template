@@ -11,7 +11,7 @@
       "vars": {
         "ENVIRONMENT": "staging",
         "CF_ACCESS_DOMAIN": "https://nakayamaken-blog.cloudflareaccess.com",
-        "POLICY_AUD": "bf7cea9fc618158b7080c734993f6030d676bd6403c71cf500b45e5ad0061a49"
+        "POLICY_AUD": "7e5f857517ed1ba66aa5b8ad73feb4e1a40ee8d230a5eb9dd036b9edc95df9e1"
       }
     },
     "production": {
