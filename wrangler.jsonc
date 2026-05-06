@@ -6,13 +6,29 @@
     "directory": "./dist",
     "binding": "ASSETS"
   },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "dojo_local_db",
+      "database_id": "123",
+      "migrations_dir": "./src/server/db/migrations"
+    }
+  ],
   "env": {
     "staging": {
       "vars": {
         "ENVIRONMENT": "staging",
         "CF_ACCESS_DOMAIN": "https://nakayamaken-blog.cloudflareaccess.com",
         "POLICY_AUD": "7e5f857517ed1ba66aa5b8ad73feb4e1a40ee8d230a5eb9dd036b9edc95df9e1"
-      }
+      },
+      "d1_databases": [
+        {
+          "binding": "DB",
+          "database_name": "dojo_staging_db",
+          "database_id": "30ad2d6a-819f-4688-a487-66c792e193e0",
+          "migrations_dir": "./src/server/db/migrations"
+        }
+      ]
     },
     "production": {
       "vars": {
